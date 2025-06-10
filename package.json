@@ -1,0 +1,24 @@
+{
+  "name": "taller-agentes-mcp-nodejs",
+  "version": "1.0.0",
+  "description": "Este proyecto usa MCP para crear herramientas y agentes inteligentes, integrando [Model Context Protocol](https://github.com/modelcontextprotocol/python-sdk), LangGraph y LangChain.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "@googlemaps/google-maps-services-js": "^3.4.1",
+    "@langchain/langgraph": "^0.3.1",
+    "@langchain/mcp-adapters": "^0.5.2",
+    "@langchain/ollama": "^0.2.1",
+    "@modelcontextprotocol/sdk": "^1.12.1",
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "ical": "^0.8.0",
+    "langfuse-langchain": "^3.37.4"
+  }
+}
