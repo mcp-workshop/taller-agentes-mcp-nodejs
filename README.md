@@ -76,12 +76,12 @@ node paso3/agents/reactive.js
 
 🛠️ **Actividad paso4**: Vamos a hacer una poda a la respuesta de open meteo. ¿Mejoran las respuestas? ¿Y el tiempo de ejecución?
 
-node paso3/agents/reactive.js
+node paso4/agents/reactive.js
 
 🛠️ **Actividad paso5**: Añadir una función que llame a un calendario ICS y devuelva un JSON con tus eventos
 
 cp paso5/tools/calendar/.env.example paso5/tools/calendar/.env
-uv run paso5/tools/calendar/main.py
+node paso5/tools/calendar/index.js
 npx @modelcontextprotocol/inspector (http://127.0.0.1:8000/sse)
 
 🛠️ **Actividad paso6**: Haz que tu agente use las dos herramientas en una sola consulta
