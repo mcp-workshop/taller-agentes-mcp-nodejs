@@ -9,7 +9,7 @@ import { CallbackHandler } from "langfuse-langchain";
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 dotenv.config({ path: path.join(__dirname, '.env') });
 
-const langfuseHandler = new CallbackHandler();
+const langfuseHandlerTrace = new CallbackHandler();
 
 const client = new MultiServerMCPClient({
   mcpServers: {
@@ -53,7 +53,7 @@ const messages = [
   {"role": "user", "content": "¿Durante la proxima Retro que hay planificada, va a llover?"},
 ];
 
-const stream = await agent.stream({ messages }, { callbacks: [langfuseHandler] });
+const stream = await agent.stream({ messages }, { callbacks: [langfuseHandlerTrace]});
 let agent_response
 for await (agent_response of stream) {
   console.log(agent_response);
